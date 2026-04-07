@@ -73,4 +73,8 @@ See [SETUP.md](SETUP.md) for the full Auth0 tenant configuration that produces t
 
 ## Status
 
-v0 — extracted from SlugKit and generalised for reuse. Tests cover the JWT validation algorithm against an in-process keypair; the HTTP-backed JWKS fetch is exercised by integration tests in the consuming service.
+v0. Tests cover the JWT validation algorithm against an in-process keypair; the HTTP-backed JWKS fetch is exercised by integration tests in the consuming service.
+
+## License
+
+Apache License 2.0 — see [LICENSE](LICENSE).
