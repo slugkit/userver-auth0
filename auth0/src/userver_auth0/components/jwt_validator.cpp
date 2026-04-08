@@ -211,6 +211,7 @@ properties:
         description: Allowed signing algorithms (RS256/RS384/RS512). Symmetric algorithms are not supported.
         items:
             type: string
+            description: Algorithm name (RS256, RS384, or RS512).
     token_prefix:
         type: string
         description: Bearer prefix to strip from the input token. Default `Bearer`. Set to empty to skip stripping.
@@ -227,6 +228,7 @@ properties:
             critical claims like `sub`. Example: `sub: sub`.
         additionalProperties:
             type: string
+            description: JWT claim key (e.g. `sub`) to map to the output key.
         properties: {}
     optional_claims:
         type: object
@@ -236,6 +238,7 @@ properties:
             custom claims like `email: https://your-app/email`.
         additionalProperties:
             type: string
+            description: JWT claim key to map to the output key.
         properties: {}
     )");
 }
